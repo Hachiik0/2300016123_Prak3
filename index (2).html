@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="teks">My To-Do List</h2>
+        <input type="text" id="newTask" placeholder="Add a new task...">
+        <button onclick="addTask()">Add</button>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="ubah-tampilan">
+        <h2>Change Appearance</h2>
+
+<select id="colorSelector" onchange="changeBackgroundColor()">
+        <option value="">Select Background Color</option>
+        <option value="Red">Red</option>
+        <option value="Navy">Blue</option>
+        <option value="Green">Green</option>
+</select>
+
+<div class="tombol-tampilan">
+    <button onclick="increaseFontSize()">Increase Font Size</button>
+    <button onclick="decreaseFontSize()">Decrease Font Size</button>
+    <button id="toggleButton" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</div>
+    <select id="fontchange" onclick="changeFontStyle()">
+        <option value="">Change Font Style</option>
+        <option value="TimesNewRoman">Times New Roman</option>
+        <option value="Consolas">Consolas</option>
+        <option value="ALgerian">Algerian</option>
+        <option value="Calibri">Calibri</option>
+    </select>
+
+   
+    <script src="main.js"></script>
+</body>
+
+</html>
